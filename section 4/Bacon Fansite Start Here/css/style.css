@@ -4,8 +4,8 @@ h1 {
     font-size: 200px;
 }
 
-img {
-    background-color: red;
+img:hover {
+    background-color: gold;
 }
 
 /*-------------------------class---------------------------------*/
@@ -16,4 +16,10 @@ img {
 
 .bacon{
     background-color: blue;
+}
+
+/*----------------------------id--------------------------------------*/
+
+#header{
+    color: aqua;
 }
