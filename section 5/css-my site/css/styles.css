@@ -1,5 +1,10 @@
-div{
+.first{
     background-color: #FCECDD;
+    width: 200px;
+    height: 200px;
+    border: solid 10px;
+    padding: 20px;
+    border-color: black;
 }
 
 body {
@@ -8,4 +13,21 @@ body {
 
 h1{
     margin-top: 0;
+}
+.second {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border: solid 20px;
+    border-color: black;
+    margin-left: 260px;
+}
+
+.third {
+    background-color: aqua;
+    border-color: black;
+    width: 200px;
+    height: 200px;
+    border: solid 10px;
+    margin-left: 500px;
 }
