@@ -1,14 +1,20 @@
 body{
-    background-color: aqua;
+    background-color: #7C83FD;
 }
 hr{
     border-style: none;
-    border-color: grey;
+    border-color: #88FFF7;
     border-top-style: dotted;
     border-width: 5px;
     width: 3%;
 }
 
 h1,h2 {
-    color: #66bfbf;
+    color: #96BAFF;
+}
+
+img{
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
 }
