@@ -23,21 +23,11 @@ h3{
     padding-top: 20px;
 }
 .second {
-    background-color: red;
-    width: 200px;
-    height: 200px;
-    border: solid 20px;
-    border-color: black;
-    margin-left: 260px;
+ 
 }
 
 .third {
-    background-color: aqua;
-    border-color: black;
-    width: 200px;
-    height: 200px;
-    border: solid 10px;
-    margin-left: 500px;
+   
 }
 span {
     text-decoration: underline;
