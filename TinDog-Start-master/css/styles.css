@@ -6,5 +6,9 @@ h1{
 
 #title{
     background-color: #ff4c68;
-    font-family: 'Ubuntu', sans-serif;>
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container-fluid{
+    padding: 3% 15%;
 }
