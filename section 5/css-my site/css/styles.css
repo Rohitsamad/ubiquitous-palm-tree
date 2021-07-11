@@ -1,10 +1,5 @@
 .first{
     background-color: #FCECDD;
-    width: 200px;
-    height: 200px;
-    border: solid 10px;
-    padding: 20px;
-    border-color: black;
 }
 
 body {
@@ -30,4 +25,7 @@ h1{
     height: 200px;
     border: solid 10px;
     margin-left: 500px;
+}
+span {
+    text-decoration: underline;
 }
