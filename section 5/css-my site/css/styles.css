@@ -1,13 +1,17 @@
 .first{
     background-color: #FCECDD;
+    position: relative;
+    padding-top: 20px;
 }
 
 body {
+    text-align: center;
     margin: 0;
 }
 
 h1{
-    margin-top: 0;
+    width: 5%;
+    margin: 0 auto 0 auto;
 }
 .second {
     background-color: red;
@@ -28,4 +32,16 @@ h1{
 }
 span {
     text-decoration: underline;
+}
+
+.top-cloud{
+    position: absolute;
+    right: 300px;
+    top: 20px;
+}
+
+.bottom-cloud{
+    position: absolute;
+    left: 300px;
+    bottom: 200px;
 }
