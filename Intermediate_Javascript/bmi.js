@@ -19,7 +19,8 @@ if (bmi >= 25) {
     
 }
 
-bmiCalculator(63,1.65);function bmiCalculator(weight,height) {
+bmiCalculator(63,1.65);
+function bmiCalculator(weight,height) {
 
     var bmi = Math.round(weight / Math.pow(height,2));
     var interpretation;
