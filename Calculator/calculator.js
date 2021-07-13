@@ -1,3 +1,4 @@
+
 const express = require("express");
 const B = require("body-parser");
 
@@ -17,6 +18,21 @@ app.post("/", function(request, response){
 
     response.send("The result of the calcilation is " + result);
 });
+
+app.get("/bmicalculator", function(request, response){
+    response.sendFile(__dirname + "/bmiCalculator.html");
+});
+
+app.post("/bmicalculator", function(request, response){
+
+    var weight = Number(request.body.weight);
+    var height = Number(request.body.height);
+
+    var result = weight/height*height;
+
+    response.send("BMI is " + result);
+});
+
 
 app.listen(3000, function(){
     console.log("server started on port 3000");
