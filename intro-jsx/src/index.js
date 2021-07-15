@@ -4,23 +4,39 @@ import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const name = "Rohit";
+//const name = "Rohit";
 //const lname = "Samad";
 //const n = 7;
-const currentDate = new Date();
-const year = currentDate.getFullYear();
-const img = "https://picsum.photos/200";
+//const currentDate = new Date();
+//const year = currentDate.getFullYear();
+//const img = "https://picsum.photos/200";
+const date = new Date();
+const currentTime = date.getHours();
 
 const customStyle = {
   color: "red",
   fontsize: "20",
   border: "1px solid black"
 };
+let greeting;
+
+if (currentTime < 12){
+  greeting = "Good morning";
+  customStyle.color = "red";
+} else if (currentTime <18){
+  greeting = "Good Afternoon";
+  customStyle.color = "red";
+} else {
+  greeting = "Good Night";
+  customStyle.color = "red";
+}
+
+
 
 ReactDOM.render(
   <div>
     
-    <h1 style={customStyle}>Hello</h1>
+    <h1 style={customStyle}>{greeting}</h1>
     
   </div>,
   document.getElementById('root')
