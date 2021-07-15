@@ -1,17 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+//import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const name = "Rohit";
-const lname = "Samad";
-const n = 7;
+//const lname = "Samad";
+//const n = 7;
+const currentDate = new Date();
+const year = currentDate.getFullYear();
+const img = "https://picsum.photos/200";
 
 ReactDOM.render(
   <div>
-    <h1>Hello {name+" "+lname}</h1>
-    <p>My lucky number is {n}</p>
+    
+    <img src={img} />
+    
   </div>,
   document.getElementById('root')
 );
