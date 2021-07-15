@@ -4,14 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const name = "Rohit";
+const lname = "Samad";
+const n = 7;
+
 ReactDOM.render(
   <div>
-    <h1>Hello World</h1>
-    <ul>
-      <li>cake</li>
-      <li>cake</li>
-      <li>cake</li>
-    </ul>
+    <h1>Hello {name+" "+lname}</h1>
+    <p>My lucky number is {n}</p>
   </div>,
   document.getElementById('root')
 );
