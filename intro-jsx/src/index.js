@@ -4,7 +4,9 @@ import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import pi, {doublePi, triplePi} from './math';
+//import pi, {doublePi, triplePi} from './math';
+
+import {add, multiply, divide, substract} from './math';
 
 //const name = "Rohit";
 //const lname = "Samad";
@@ -33,9 +35,21 @@ if (currentTime < 12){
   customStyle.color = "red";
 }
 
-
-
 ReactDOM.render(
+  <div>
+    <ul>
+      <li>{add(1, 2)}</li>
+      <li>{multiply(2, 3)}</li>
+      <li>{substract(3, 4)}</li>
+      <li>{divide(4, 2)}</li>
+    </ul>    
+  </div>,
+  document.getElementById('root')
+);
+
+
+
+/*ReactDOM.render(
   <div>
     <ul>
       <li>{pi}</li>
@@ -44,7 +58,7 @@ ReactDOM.render(
     </ul>    
   </div>,
   document.getElementById('root')
-);
+);*/
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
