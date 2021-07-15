@@ -11,10 +11,16 @@ const currentDate = new Date();
 const year = currentDate.getFullYear();
 const img = "https://picsum.photos/200";
 
+const customStyle = {
+  color: "red",
+  fontsize: "20",
+  border: "1px solid black"
+};
+
 ReactDOM.render(
   <div>
     
-    <img src={img} />
+    <h1 style={customStyle}>Hello</h1>
     
   </div>,
   document.getElementById('root')
