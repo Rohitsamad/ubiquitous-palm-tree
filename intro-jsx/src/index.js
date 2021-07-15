@@ -4,6 +4,8 @@ import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import pi, {doublePi, triplePi} from './math';
+
 //const name = "Rohit";
 //const lname = "Samad";
 //const n = 7;
@@ -35,9 +37,11 @@ if (currentTime < 12){
 
 ReactDOM.render(
   <div>
-    
-    <h1 style={customStyle}>{greeting}</h1>
-    
+    <ul>
+      <li>{pi}</li>
+      <li>{doublePi()}</li>
+      <li>{triplePi()}</li>
+    </ul>    
   </div>,
   document.getElementById('root')
 );
