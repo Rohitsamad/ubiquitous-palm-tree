@@ -7,7 +7,11 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <div>
     <h1>Hello World</h1>
-    <p>This is a paragraph</p>
+    <ul>
+      <li>cake</li>
+      <li>cake</li>
+      <li>cake</li>
+    </ul>
   </div>,
   document.getElementById('root')
 );
