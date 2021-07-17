@@ -1,10 +1,75 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
+
+function App() {
+
+  const [contact, setContact] = useState({
+    fName: "",
+    lName: "",
+    email: ""
+  });
+
+  function handleChange(event) {
+    const {name, value} = event.target;
+    
+    setContact((prevValue) => {
+      if (name === "fName") {
+        return {
+          fName: value,
+          lName: prevValue.lName,
+          email: prevValue.email          
+        };
+      } else if (name === "lName") {
+        return {
+          fName: prevValue.fName,
+          lName: value,
+          email: prevValue.email
+        };
+      } else if (name === "email") {
+        return {
+          fName: prevValue.fName,
+          lName: prevValue.lName,
+          email: value
+        };
+      }
+    });
+  }
+
+  return (
+    <div className="container">
+      <h1>Hello {contact.fName} {contact.lName}</h1>
+      <p>{contact.email}</p>
+      <form action="">
+      <input onChange={handleChange} value={contact.fName} type="text" name="fName" placeholder="First name"/>
+      <input onChange={handleChange} value={contact.lName} type="text" name="lName" placeholder="Last name" />
+      <input onChange={handleChange} value={contact.email} type="text" name="email" placeholder="email" />
+      <button type="submit">Submit</button>
+      </form>
+    </div>
+  )
+}
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*import React, { useState } from 'react';
 
 function App() {
 
   const [fullName, setfullName] = useState({
     fName: "",
-    lName: ""
+    lName: "",
   });
 
   function handleChange(event) {
@@ -41,7 +106,7 @@ function App() {
 export default App;
 
 
-
+*/
 
 
 
